@@ -82,6 +82,7 @@ console.log("email:",arr[0]);
 console.log("Password:",arr[1]);
 
 
+
 // 9. trim(), trimStart(),trimEnd()
 
 
