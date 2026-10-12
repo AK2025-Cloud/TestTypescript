@@ -14,8 +14,7 @@ let str3:string =`This is a string  with back tick`;
 
 console.log(str1);
 console.log(str2);
-console.log(str3);
-
+console.log(str3); 
 // When to use back tick 
 let num :number=10;
 
@@ -70,7 +69,7 @@ console.log("Replaced string :" ,str.replace("Typescript","word"));
 //8. split() - breake the string into multipleased on  the delimeter , retruns an array 
 
 //Ex1: 
-let words:string []= str.split(" ")
+let words:string []= str.split(" ");
 console.log("After splitting string:",words); //['Hello','TypeScript!']
 
 // Ex2: 
@@ -85,7 +84,44 @@ console.log("Password:",arr[1]);
 
 // 9. trim(), trimStart(),trimEnd()
 
+console.log("Original string:", mystring);   //welcome to typescript
+console.log("trim string:", mystring.trim());     //welcome to typescript
+console.log("trimStart string:",mystring.trimStart()); //welcome to typescript
+console.log("trimEnd string:",mystring.trimEnd());    
 
+// 10. concat()
+
+str1 ="Welcome";
+str2="to typescript";
+str3="and javascript";
+
+console.log("After concatenation:",str1.concat(str2)); //welcome typescript
+console.log("After concatenation:",str1+str2);  //this is alternative but not recomended
+console.log("Welcome".concat("to typescript")); //welcome typescript
+console.log(str1.concat(str2).concat(str3)); //welcome typescript and javascript
+
+
+
+//concept of string imutability 
+
+// num=10;
+
+let res=num+5;
+console.log(res); //15
+console.log(num);  //10
+
+
+str1="Welcome";
+
+let modifiedstring=str1.concat("to typescript");
+console.log(str1);//Welcome
+
+// multiline string
+
+let multiline:string=`welcome
+      to typescript`;
+
+console.log(multiline);
 
 
 
